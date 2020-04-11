@@ -1,0 +1,59 @@
+/* CUSTOM PROPERTIES */
+:root{
+    --red: #e50914;
+    --background: #141414;
+}
+/* END CUSTOM PROPERTIES */
+
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background: var(--background);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+}
+/* END GLOBAL */
+
+/* HEADER */
+
+.header{
+    padding: 30px 0;
+}
+
+.header__container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    color: var(--red);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.navbar__link{
+    color: #aaa;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar__link--selected{
+    color: #fff;
+}
+
+.navbar__link:hover{
+    color: #fff;
+}
+/* END HEADER */
