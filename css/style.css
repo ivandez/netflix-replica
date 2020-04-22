@@ -135,6 +135,10 @@
     margin-right: 2px;
 }
 
+.carousel-button--active{    
+    background: red;
+}
+
 .carousel-button:hover{
     background: red;
 }
@@ -193,7 +197,7 @@
     box-shadow: 5px 5px 10px rgba(0,0,0 .3);
 }
 
-.move--hover{
+.movie--hover{
     transform: scale(1.2);
     transform-origin: center;
 }
