@@ -112,9 +112,100 @@
 }
 /* END MAIN MOVIE */
 
+/* CAROUSEL */
+
+.recommended-movies__title-and-controls{
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommended-movies__title{
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;    
+}
+
+.carousel-button{
+    background: white;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+
+.carousel-button:hover{
+    background: red;
+}
+
+.recommended-movies{
+    margin-bottom: 70px;
+}
+
+.recommended-movies__main-container{
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.arrow{
+    border: none;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    position: absolute;
+    height: 50%;
+    top: calc(50% - 25%);
+    transition: .2s ease all;
+    line-height: 40px;
+    width: 40px;
+    z-index: 500;
+}
+
+.arrow:hover{
+   background: rgba(0,0,0,.9); 
+}
+.arrow--left{
+    left: 0;
+}
+
+.arrow--right{
+    right: 0;
+}
+
+.carousel-container{
+    overflow: hidden;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.carousel-container__carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.movie{
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0 .3);
+}
+
+.move--hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.movie__image{
+    vertical-align: top;
+    width: 100%;
+}
+/* END CAROUSEL */
+
 /* MEDIA QUERIES */
 
-/* END MEDIA QUERIES */
 @media only screen and (max-width: 800px){
     .logo{
         margin-bottom: 10px;
@@ -133,4 +224,22 @@
     .main-movie__description{
         max-width: 100%;
     }
+
+    .carousel-container{
+        overflow: visible;   
+    }
+
+    .carousel-container__carousel{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .recommended-movies__controls,
+    .arrow{
+        display: none;
+    }
+    
 }
+
+/* END MEDIA QUERIES */
