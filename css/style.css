@@ -61,7 +61,7 @@
 /* MAIN MOVIE */
 .main-movie{
     align-items: flex-end;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('/img/interstellar.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('../img/interstellar.jpg');
     background-position: center center;
     background-size: cover;
     color: white;
